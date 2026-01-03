@@ -309,8 +309,8 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Portfolio",
     title: "My 3D Developer Portfolio",
-    src: "/assets/projects-screenshots/portfolio/landing.png",
-    screenshots: ["/assets/projects-screenshots/portfolio/landing.png"],
+    src: "/assets/nav-link-previews/about.jpeg",
+    screenshots: ["/assets/nav-link-previews/about.jpeg"],
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -321,7 +321,7 @@ const projects: Project[] = [
       backend: [],
     },
     live: "https://syedharif.xyz/",
-    github: "https://github.com/Dev7478/",
+    github: "https://github.com/Dev7478/myfolio",
     get content() {
       return (
         <div>
@@ -338,8 +338,10 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/portfolio/landing.png`,
+              `${BASE_PATH}/portfolio/about.jpeg`,
+              `${BASE_PATH}/portfolio/navmenu.jpeg`,
               `${BASE_PATH}/portfolio/skills.png`,
+              `${BASE_PATH}/portfolio/contact.jpeg`,
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Space Theme</TypographyH3>
@@ -348,7 +350,7 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/portfolio/navbar.png`,
+              `${BASE_PATH}/portfolio/navmenu.jpeg`,
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
@@ -357,7 +359,7 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/portfolio/project.png`,
+              `${BASE_PATH}/portfolio/about.jpeg`,
             ]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
