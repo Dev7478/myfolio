@@ -15,9 +15,14 @@ export default function FunnyThemeToggle({
 }: {
   className?: string;
 }) {
-  const { setTheme, theme } = useTheme();
+  const { setTheme, theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
   const [counter, setCounter] = React.useState({ dark: 0, light: 0 });
   const { toast } = useToast();
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const goLight = () => {
     setCounter({ ...counter, light: counter.light + 1 });
@@ -34,9 +39,25 @@ export default function FunnyThemeToggle({
     });
     setTheme("dark");
   };
+
+  if (!mounted) {
+    return (
+      <Button
+        variant="outline"
+        size="icon"
+        className={cn("border-none bg-transparent", className)}
+        disabled
+      >
+        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 pointer-events-none" />
+        <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100 pointer-events-none" />
+        <span className="sr-only">Toggle theme</span>
+      </Button>
+    );
+  }
+
   return (
     <>
-      {theme === "light" ? (
+      {resolvedTheme === "light" ? (
         <Button
           variant="outline"
           size="icon"

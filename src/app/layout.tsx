@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Archivo_Black } from "next/font/google";
+import type { ReactNode } from "react";
+import { Archivo_Black } from "next/font/google";
 import "./globals.css";
 import ElasticCursor from "@/components/ui/ElasticCursor";
 import Particles from "@/components/Particles";
@@ -54,10 +55,10 @@ const archivoBlack = Archivo_Black({
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <html lang="en" className={[archivoBlack.className].join(" ")}>
+    <html lang="en" className={archivoBlack.className} suppressHydrationWarning>
       <head>
         <Script
           defer
