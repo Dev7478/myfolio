@@ -3,7 +3,7 @@
 import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 import { Button } from "../ui/button";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import { config } from "@/data/config";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ const BUTTONS = [
   {
     name: "Twitter",
     href: config.social.twitter,
-    icon: SiTwitter,
+    icon: SiX,
   },
 ];
 

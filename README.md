@@ -1,9 +1,4 @@
 <!-- BADGES -->
-<p align="center">
-  <a href="https://vercel.com/"><img alt="Vercel" src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel"></a>
-  <a href="#license"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
-  <a href="https://www.linkedin.com/in/syedharif/"><img alt="Linkedin - Syed Harif" src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555"></a>
-</p>
 
 <a name="top"></a>
 
