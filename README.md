@@ -53,7 +53,6 @@ At its core lies a **custom-built 3D interactive keyboard** (<u><a href="https:/
 - **Space-inspired Visual Theme**: subtle particle system and dark, minimal aesthetic.
 - **Responsive & Accessible**: Tailwind CSS and component-driven UI for consistent behavior across devices.
 - **Validated Contact Flow**: contact form handled via Resend API, input validated with Zod.
-- **Realtime Utilities**: Socket.io integrated for realtime features where applicable.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -64,7 +63,7 @@ At its core lies a **custom-built 3D interactive keyboard** (<u><a href="https:/
 | Framework | Next.js, React |
 | Styling & UI | Tailwind CSS, Shadcn UI, Aceternity UI |
 | 3D & Animations | Spline Runtime, GSAP, Framer Motion |
-| Utilities | Resend, Socket.io, Zod |
+| Utilities | Resend, Zod |
 | Hosting | Vercel |
 
 <p align="right">(<a href="#top">back to top</a>)</p>

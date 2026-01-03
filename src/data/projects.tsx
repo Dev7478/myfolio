@@ -21,7 +21,6 @@ import {
   SiReactquery,
   SiSanity,
   SiShadcnui,
-  SiSocketdotio,
   SiSupabase,
   SiTailwindcss,
   SiThreedotjs,
@@ -171,12 +170,7 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiFirebase />,
   },
-  sockerio: {
-    title: "Socket.io",
-    bg: "black",
-    fg: "white",
-    icon: <SiSocketdotio />,
-  },
+  
   js: {
     title: "JavaScript",
     bg: "black",
