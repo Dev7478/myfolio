@@ -108,12 +108,12 @@ const TOOLS = [
     icon: <FaDocker size={"50px"} color="#2496ed" />,
     color: "#2496ed",
   },
-  {
-    name: "NginX",
-    content: "Next.js is a React framework for production",
-    icon: <DiNginx size={"50px"} color="#008000" />,
-    color: "#008000",
-  },
+  // {
+  //   name: "NginX",
+  //   content: "Next.js is a React framework for production",
+  //   icon: <DiNginx size={"50px"} color="#008000" />,
+  //   color: "#008000",
+  // },
   {
     name: "Vue.js",
     content: "Next.js is a React framework for production",
@@ -168,12 +168,12 @@ const TOOLS = [
     icon: <SiVivaldi size={"50px"} color="#007acc" />,
     color: "#007acc",
   },
-  {
-    name: "VIM",
-    content: "Next.js is a React framework for production",
-    icon: <DiVim size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
+  // {
+  //   name: "VIM",
+  //   content: "Next.js is a React framework for production",
+  //   icon: <DiVim size={"50px"} color="#fff" />,
+  //   color: "#000000",
+  // },
   {
     name: "Code Formatter",
     content: "Prettier is a code formatter for JavaScript and TypeScript",
@@ -186,12 +186,12 @@ const TOOLS = [
     icon: <DiNpm size={"50px"} color="#CB3837" />,
     color: "#CB3837",
   },
-  {
-    name: "Yarn",
-    content: "Next.js is a React framework for production",
-    icon: <FaYarn size={"50px"} color="#2C8EBB" />,
-    color: "#2C8EBB",
-  },
+  // {
+  //   name: "Yarn",
+  //   content: "Next.js is a React framework for production",
+  //   icon: <FaYarn size={"50px"} color="#2C8EBB" />,
+  //   color: "#2C8EBB",
+  // },
   {
     name: "Vercel",
     content: "Next.js is a React framework for production",
@@ -216,12 +216,12 @@ const TOOLS = [
     icon: <TbTerminal2 size={"50px"} color="#fff" />,
     color: "#000000",
   },
-  {
-    name: "AWS",
-    content: "Next.js is a React framework for production",
-    icon: <FaAws size={"50px"} color="#3f51b5" />,
-    color: "#000000",
-  },
+  // {
+  //   name: "AWS",
+  //   content: "Next.js is a React framework for production",
+  //   icon: <FaAws size={"50px"} color="#3f51b5" />,
+  //   color: "#000000",
+  // },
 ];
 
 function Page() {
