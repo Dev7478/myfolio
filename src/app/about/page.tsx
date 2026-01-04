@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { usePreloader } from "@/components/preloader";
 import { DiMongodb, DiNginx, DiNpm, DiPostgresql, DiVim } from "react-icons/di";
 import {
   FaAws,
@@ -28,7 +29,7 @@ import {
   SiJavascript,
   SiTypescript,
   SiVercel,
-  SiVisualStudioCode,
+  SiVivaldi,
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 
@@ -40,26 +41,26 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "syedharif4@gmail",
-    href: "mailto:syedharif4@gmail.com",
+    content: "debanshuchatterrjee@gmail",
+    href: "mailto:debanshuchatterrjee@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
-    content: "+91 6006106820",
-    href: "tel:+916006106820",
+    content: "+91 7478606028",
+    href: "tel:+917478606028",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/syedharif/",
-    content: "/syedharif",
+    href: "https://www.linkedin.com/in/debanshu-chatterjee-61a121265/",
+    content: "/debanshuchatterjee",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/syedharif",
-    content: "/syedharif",
+    href: "https://github.com/Dev7478",
+    content: "/Dev7478",
     icon: <FaGithub height={"50px"} />,
   },
 ];
@@ -164,7 +165,7 @@ const TOOLS = [
   {
     name: "VS Code",
     content: "Next.js is a React framework for production",
-    icon: <SiVisualStudioCode size={"50px"} color="#007acc" />,
+    icon: <SiVivaldi size={"50px"} color="#007acc" />,
     color: "#007acc",
   },
   {
@@ -176,7 +177,7 @@ const TOOLS = [
   {
     name: "Code Formatter",
     content: "Prettier is a code formatter for JavaScript and TypeScript",
-    icon: <SiVisualStudioCode size={"50px"} color="#f7b93c" />,
+    icon: <SiVivaldi size={"50px"} color="#f7b93c" />,
     color: "#f7b93c",
   },
   {
@@ -204,8 +205,8 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Linux",
-    content: "Next.js is a React framework for production",
+    name: "Kubuntu",
+    content: "Kubuntu is a free, user-friendly Linux distribution based on Ubuntu",
     icon: <FaLinux size={"50px"} color="#0077C4" />,
     color: "#000000",
   },
@@ -225,11 +226,25 @@ const TOOLS = [
 
 function Page() {
   const [toolsLoaded, setToolsLoaded] = useState(false);
+  const { bypassLoading } = usePreloader();
+
   useEffect(() => {
     setToolsLoaded(true);
-  }, []);
+    bypassLoading();
+    
+    // Scroll to about section if navigating with anchor
+    const hash = window.location.hash;
+    if (hash === "#about") {
+      const element = document.getElementById("about");
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [bypassLoading]);
   return (
-    <div className="container mx-auto px-4 md:px-[50px] xl:px-[200px] text-zinc-300 pt-20 pb-20">
+    <section id = "about" className="container mx-auto px-4 md:px-[50px] xl:px-[200px] text-zinc-300 pt-20 pb-20">
       <div className="flex flex-col lg:flex-row gap-5">
         <aside className="w-full md:basis-1/4">
           <div
@@ -243,11 +258,11 @@ function Page() {
                 <img
                   className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] aspect-square  bg-zinc-800"
                   alt="me"
-                  src="/assets/me.jpg"
+                  src="/assets/me.png"
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
-                <p className="text-center text-xl">Syed Harif</p>
+                <p className="text-center text-xl">Debanshu Chatterjee</p>
                 <div className="text-xs bg-zinc-700 w-fit px-3 py-1 rounded-full">
                   Web Developer
                 </div>
@@ -283,7 +298,7 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Syed Harif, a Comp. Sci. Engineer with hands-on experience in Development, DevOps and 
+              Hey there! I&apos;m Debanshu Chatterjee, a Comp. Sci. Student with hands-on experience in Development, DevOps and 
               Database management with hands-on experience in deploying & automating workflows, and 
               collaborating with foreign clients. Strong analytical skills,effective communication,
               and a team-oriented approach to driving process improvements and delivering results.
@@ -357,7 +372,7 @@ function Page() {
           </div>
         </main>
       </div>
-    </div>
+    </section>
   );
 }
 

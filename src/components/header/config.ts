@@ -8,7 +8,7 @@ const links: Link[] = [
   },
   {
     title: 'About',
-    href: '/#about',
+    href: '/about#about',
     thumbnail: '/assets/nav-link-previews/about.jpeg'
   },
   {
