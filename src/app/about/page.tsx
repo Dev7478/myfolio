@@ -26,12 +26,9 @@ import {
 import {
   SiExpress,
   SiJavascript,
-  SiKubuntu,
-  SiPm2,
-  SiPrettier,
   SiTypescript,
   SiVercel,
-  SiVisualstudiocode,
+  SiVisualStudioCode,
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 
@@ -167,7 +164,7 @@ const TOOLS = [
   {
     name: "VS Code",
     content: "Next.js is a React framework for production",
-    icon: <SiVisualstudiocode size={"50px"} color="#007acc" />,
+    icon: <SiVisualStudioCode size={"50px"} color="#007acc" />,
     color: "#007acc",
   },
   {
@@ -177,9 +174,9 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Prettier",
-    content: "Next.js is a React framework for production",
-    icon: <SiPrettier size={"50px"} color="#f7b93c" />,
+    name: "Code Formatter",
+    content: "Prettier is a code formatter for JavaScript and TypeScript",
+    icon: <SiVisualStudioCode size={"50px"} color="#f7b93c" />,
     color: "#f7b93c",
   },
   {
@@ -207,10 +204,9 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Kubuntu",
+    name: "Linux",
     content: "Next.js is a React framework for production",
-    // give me correct color for  kubuntu
-    icon: <SiKubuntu size={"50px"} color="#0077C4" />,
+    icon: <FaLinux size={"50px"} color="#0077C4" />,
     color: "#000000",
   },
   {
