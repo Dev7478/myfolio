@@ -30,7 +30,7 @@ const EasterEggs = () => {
         "color: #FFD700; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px;"
       );
 
-      ["Debanshu", "DEBA", "Deba", "debanshu"].forEach((name) => {
+      ["Debanshu", "DEBA", "Deba","Dev" ,"deba","deb" ,"devanshu","Deb","dev","Devanshu", "debanshu"].forEach((name) => {
         // @ts-ignore
         if (Object.hasOwn(window, name)) return;
         Object.defineProperty(window, name, {
