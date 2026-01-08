@@ -37,8 +37,8 @@ const EasterEggs = () => {
           get() {
             console.log(
               "%c✨ Abra Kadabra! ✨\n\n" +
-                "You just summoned the magic of Syed Harif! 🧙‍♂️\n" +
-                "What??? youre not impressed? Fine, but remember: With great power comes great responsibility! 💻⚡",
+                "You just summoned the magic of Debanshu! 🧙‍♂️\n" +
+                "What??? you're not impressed? Fine, but remember: With great power comes great responsibility! 💻⚡",
 
               "color: #FF4500; font-size: 18px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin-top:10px"
             );
