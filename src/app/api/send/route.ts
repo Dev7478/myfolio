@@ -41,17 +41,17 @@ export async function POST(req: Request) {
     const resend = getResend();
 
     // ⚠️ IMPORTANT: use verified domain email here
-    const { data, error } = await resend.emails.send({
-      from: "<portfolio>@astaeurkie.resend.app", // ← CHANGE THIS
-      to: [config.email],
-      subject: `New message from ${fullName}`,
-      replyTo: email, // ← CHANGE THIS to: email,
-      react: EmailTemplate({
-        fullName,
-        email,
-        message,
-      }),
-    });
+   const { data, error } = await resend.emails.send({
+    from: "Portfolio <onboarding@resend.dev>", // safe default
+    to: [config.email],
+    subject: `New message from ${fullName}`,
+    reply_to: email,
+    react: EmailTemplate({
+      fullName,
+      email,
+      message,
+    }),
+  });
 
     if (error) {
       console.error("Resend error:", error);
