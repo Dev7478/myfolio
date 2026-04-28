@@ -298,7 +298,7 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Debanshu Chatterjee, a Comp. Sci. Student with hands-on experience in Development, DevOps and 
+              Hey there! I&apos;m Debanshu Chatterjee, a Computer Science Student with hands-on experience in Development, DevOps and 
               Database management with hands-on experience in deploying & automating workflows, and 
               collaborating with foreign clients. Strong analytical skills,effective communication,
               and a team-oriented approach to driving process improvements and delivering results.
