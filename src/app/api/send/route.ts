@@ -42,10 +42,10 @@ export async function POST(req: Request) {
 
     // ⚠️ IMPORTANT: use verified domain email here
    const { data, error } = await resend.emails.send({
-    from: "Portfolio <onboarding@resend.dev>", // safe default
-    to: [config.email],
+    from: "Portfolio <onboarding@resend.dev>",
+    to: ["debanshuchatterrjee@gmail.com"],
     subject: `New message from ${fullName}`,
-    reply_to: email,
+    replyTo: email,
     react: EmailTemplate({
       fullName,
       email,
