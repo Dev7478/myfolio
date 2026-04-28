@@ -205,8 +205,8 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Kubuntu",
-    content: "Kubuntu is a free, user-friendly Linux distribution based on Ubuntu",
+    name: "Ubuntu",
+    content: "Ubuntu is a free, user-friendly Linux distribution based on Ubuntu",
     icon: <FaLinux size={"50px"} color="#0077C4" />,
     color: "#000000",
   },
