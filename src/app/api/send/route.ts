@@ -42,7 +42,7 @@ export async function POST(req: Request) {
 
     // ⚠️ IMPORTANT: use verified domain email here
     const { data, error } = await resend.emails.send({
-      from: "Portfolio <debanshuchatterrjee@gmail.com>", // ← CHANGE THIS
+      from: "<portfolio>@astaeurkie.resend.app", // ← CHANGE THIS
       to: [config.email],
       subject: `New message from ${fullName}`,
       replyTo: email, // ← CHANGE THIS to: email,
